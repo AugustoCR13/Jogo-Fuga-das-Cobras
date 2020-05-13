@@ -633,8 +633,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.SetBoolVar,
 		C3.Plugins.Audio.Acts.StopAll,
 		C3.Plugins.System.Acts.AddVar,
-		C3.Plugins.Sprite.Acts.Destroy,
-		C3.Plugins.Text.Acts.SetText
+		C3.Plugins.Text.Acts.SetText,
+		C3.Plugins.Sprite.Acts.Destroy
 	];
 };
 self.C3_JsPropNameTable = [
@@ -771,8 +771,8 @@ self.C3_JsPropNameTable = [
 		() => "morte",
 		() => 240,
 		() => 550,
-		() => 1,
 		() => "moeda",
+		() => 1,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => v0.GetValue();
